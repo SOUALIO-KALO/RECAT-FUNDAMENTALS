@@ -1,0 +1,13 @@
+.navigation__list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navigation__item {
+  list-style-type: none;
+}
+
+.navigation__link {
+  text-decoration: none;
+}
