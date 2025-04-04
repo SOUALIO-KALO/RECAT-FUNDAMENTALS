@@ -1,7 +1,7 @@
 .navigation__list {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .navigation__item {
@@ -10,4 +10,5 @@
 
 .navigation__link {
   text-decoration: none;
+  color: white;
 }

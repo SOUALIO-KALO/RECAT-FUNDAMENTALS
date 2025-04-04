@@ -1,24 +1,21 @@
+import { useState } from "react";
 import "./App.css";
-import { Logo } from "./components";
-import { Navigation } from "./components";
+import { Header } from "components";
+import { Outlet } from "react-router";
 
-const NavItems = {
-  menu1: "Presentation",
-  menu2: "Projects",
-  menu3: "Contacts",
-};
+const NAV_ITEMS = [
+  { title: "Présentation", link: "/presentation" },
+  { title: "Projects", link: "/project" },
+  { title: "Contacts", link: "/contact" },
+];
 
 const App = () => {
   return (
     <>
-      <header className="header">
-        <section className="header__section">
-          <Logo />
-          <Navigation props={NavItems} />
-        </section>
-      </header>
-
-      <p>Apprrendre React js</p>
+      <Header props={{ NAV_ITEMS }} />
+      <main className="main-container">
+        <Outlet />
+      </main>
     </>
   );
 };

@@ -67,3 +67,50 @@ button:focus-visible {
   }
 }
  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Exo 2";
+  src: url("./fonts/Exo2-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fira sans";
+  src: url("./fonts/FiraSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fira sans";
+  src: url("./fonts/FiraSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: "Fira sans", sans-serif;
+  font-weight: 400;
+  /* background-color: #1a1a2e; */
+}
+
+h1,
+h2 {
+  font-family: "Fira sans", sans-serif;
+  font-weight: 600;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fira sans", sans-serif;
+  font-weight: 700;
+}
